@@ -1,0 +1,241 @@
+/* CSS Document */
+
+/*
+
+Main Colors: 
+	Mint: #66FFFF
+	Yellow: #FFCC66
+	Pink: #FF6699
+	Orange: #FF9966
+	
+	Mint Colors:
+	Darkest: #00CCCC
+	Darker: #33FFCC
+	Lighter: #99FFFF
+	Lightest: #FFFFFF
+	
+	Yellow Colors:
+	Darkest: #FFCC00
+	Darker: #FFCC33
+	Lighter: #FFFF99
+	
+	Pink Colors:
+	Darkest: #FF0B0B
+	Darker: #FF3B3B
+	Lighter: #FF9494
+	
+	Orange Colors:
+	Darkest: #FF7A0B
+	Darker: #FF943B
+	Lighter: #FFC494
+*/
+
+/*
+
+Font Families:
+	Headers= font-family: 'Raleway', sans-serif;
+	Body= font-family: 'Taviraj', serif;	
+*/
+
+.header{
+	background:#66FFFF;
+	color:#00CCCC;
+	display:block;
+	z-index:5;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;
+}
+
+.header h1{
+	font-family: 'Raleway', sans-serif;
+	font-size:60px;
+	padding:0px 0px 10px 40px;
+}
+
+#hiddennavbar{
+	width:100%;
+	text-align:left;
+	font-size:20px;
+	display:block;
+	border-bottom: 2px solid #FFCC00;
+	z-index:1;
+	position:fixed;
+	background: #FFCC66;
+}
+
+#hiddennavbar ul{
+	list-style-type: none;
+	display:block;
+	padding:20px;
+	padding-bottom:10px;
+}
+
+#hiddennavbar li{
+	display:inline;
+}
+
+#hiddennavbar a{
+	text-decoration: none;
+	padding:20px;	
+	color: white;
+}
+
+#hiddennavbar a:hover{
+	color: #FFCC66;
+	background: white;
+}
+
+#navbar{
+	text-align:left;
+	font-size:30px;
+	display:block;
+	border-bottom: 2px solid #FFCC00;
+	position:relative;
+	z-index:2;
+	background:white;
+}
+
+#navbar ul{
+	list-style-type: none;
+	display:block;
+	padding:20px;
+	padding-bottom:10px;
+
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	text-decoration: none;
+	padding:20px;	
+	color: #FFCC00;
+}
+
+#navbar a:hover{
+	color: white;
+	background: #FFCC00;
+}
+
+body{
+	z-index:-2;
+	position:relative;	
+}
+
+#billboard{
+/*	background: #FFCC66;*/
+	border:2px dotted #66FFFF;
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+	padding:20px;
+}
+	
+#billboard h1{
+	font-size:40px;	
+	font-family: 'Raleway', sans-serif;
+/*	background: #FFFF99;*/
+	display:inline;
+	margin-top:20px;
+	color: #FF6699;
+}
+
+#billboard p{
+	font-size:22px;	
+	margin-top:10px;
+	text-align:left;
+}
+
+#billboard img{
+	width:50%;	
+	margin:auto;
+}
+
+#billboard button{
+	font-family: 'Raleway', sans-serif;
+	width:200px;
+	background: #FF6699;
+	padding:10px;
+	border:2px solid #66FFFF;
+	font-size: 18px;
+	font-weight:300px;
+	border-radius:15px;
+	text-decoration:none;
+	color:white;	
+}
+
+.parallax{
+    /* The image used */
+	background-image:url(../img/camera.jpg);
+	opacity:0.7;
+
+    /* Set a specific height */
+    height: 250px; 
+	
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+.cards span{
+	color: white;
+	text-align:center;
+	margin: 0px;
+	padding: 10px 0px 10px 0px;
+	align-content:center;
+	display:block;
+}
+
+.cards{
+	background-color: #FFCC66;
+	overflow:hidden;
+	height: 100px;
+}
+
+.cards .cards{	
+	transition: 0.3s;
+}
+
+.cards h1{
+	font-size: 50px;	
+}
+
+.cards p{
+	font-size:22px;
+}
+
+.cards{
+    margin-top: 0em;   
+}
+
+.cards:hover .cards{
+    margin-top: -6.6em;
+}
+
+
+.textbox{
+	border:2px dotted #66FFFF;
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+	padding:20px;
+}
+
+.textbox h1{
+	font-size:40px;	
+	font-family: 'Raleway', sans-serif;
+	display:inline;
+	margin-top:20px;
+	color: #FF6699;
+}
+
+.textbox p{
+	font-size:22px;	
+	margin-top:10px;
+	text-align:left;
+}
